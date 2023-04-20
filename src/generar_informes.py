@@ -25,7 +25,7 @@ if __name__ == '__main__':
         path_hist_transacciones
     )
     df_informe1 = clasificador1.obtener_informe_modelo()
-    df_informe1.to_csv(os.path.join(home_path,'resultados','informe_clasificador_1.csv'), sep=";", decimal=",")
+    df_informe1.to_csv(os.path.join(home_path,'resultados','informe_clasificador_1.csv'))
 
     clasificador2 = ClasificadorMora(
         path_etiquetas,
@@ -34,4 +34,4 @@ if __name__ == '__main__':
         model_type='hgb'
     )
     df_informe2 = clasificador2.obtener_informe_modelo()
-    df_informe2.to_csv(os.path.join(home_path,'resultados','informe_clasificador_2.csv'), sep=";", decimal=",")
+    df_informe2.to_csv(os.path.join(home_path,'resultados','informe_clasificador_2.csv'))
