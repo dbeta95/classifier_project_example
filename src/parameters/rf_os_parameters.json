@@ -1,0 +1,1 @@
+{"criterion": "log_loss", "max_features": "log2", "n_estimators": 200}
